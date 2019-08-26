@@ -263,7 +263,8 @@ body {
 .team__icons {
   display: flex;
 }
-.team__icons > a {
+
+.team__icon {
   display: flex;
   height: 40px;
   width: 40px;
@@ -273,4 +274,17 @@ body {
   border: 1px solid #e8ecee;
 
   margin-right: 4px;
+  transition: background .2s linear;
+}
+
+.social__icon {
+  height: 18px;
+  fill: #c6cacc;
+}
+
+.team__icon:hover {
+  background-color: #e84545;
+}
+.team__icon:hover .social__icon {
+  fill: #fff;
 }
