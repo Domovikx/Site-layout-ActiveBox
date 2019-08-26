@@ -228,3 +228,49 @@ body {
   font-weight: bold;
   margin-bottom: 14px;
 }
+
+/* team */
+.team > .container {
+  max-width: 1200px;
+}
+.team__inner {
+  margin: 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.team__item {
+  max-width: 270px;
+  margin: 30px 0;
+}
+.team__image {
+  margin-bottom: 30px;
+}
+.team__item__title {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.team__item__subtitle {
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #e84545;
+}
+.team__item__content {
+  margin-bottom: 30px;
+}
+
+.team__icons {
+  display: flex;
+}
+.team__icons > a {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #e8ecee;
+
+  margin-right: 4px;
+}
