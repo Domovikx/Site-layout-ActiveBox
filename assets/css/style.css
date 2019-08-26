@@ -24,8 +24,6 @@ p {
 body {
   margin: 0;
 
-  background-color: #2a2e48;
-
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: #6c7279;
@@ -113,6 +111,7 @@ body {
   background-image: url("/assets/img/Rectangle_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #2a2e48;
 }
 
 .intro__inner {
@@ -192,12 +191,14 @@ body {
 }
 
 .work__item {
-  display: flex;
-  flex-basis: 25%;
-  justify-content: center;
   position: relative;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   border: 1px solid #fff;
+
+  flex: 1 1 25%;
+  min-width: 280px;
 }
 
 .work__content {
@@ -215,7 +216,7 @@ body {
   font-size: 14px;
 
   opacity: 0;
-  transition: opacity .3s linear;  
+  transition: opacity 0.3s linear;
 }
 
 .work__content:hover {
