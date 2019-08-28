@@ -274,7 +274,7 @@ body {
   border: 1px solid #e8ecee;
 
   margin-right: 4px;
-  transition: background .2s linear;
+  transition: background 0.2s linear;
 }
 
 .social__icon {
@@ -287,4 +287,66 @@ body {
 }
 .team__icon:hover .social__icon {
   fill: #fff;
+}
+
+/* reviews */
+.reviews {
+  display: flex;
+  min-height: 500px;
+  background-color: #53354a;
+}
+
+.review__item {
+  display: flex;
+}
+.review__item__image {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.review__item__content {
+  width: 50%;
+  padding-left: 85px;
+  padding-right: 75px;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.review__item__content__text {
+  font-family: "Cardo", serif;
+  font-size: 36px;
+  font-style: italic;
+
+  margin-bottom: 30px;
+}
+.review__item__content__author {
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+/* download */
+.download {
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.download__inner{
+  margin: 30px 10px;
+}
+.download__title {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+.download__subtitle {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
