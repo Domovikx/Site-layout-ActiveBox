@@ -112,6 +112,14 @@ body {
 /* burger_menu */
 .burger_menu {
   display: none;
+
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  height: 35px;
+  background-color: unset;
+  border: unset;
+  outline: none;
 }
 .burger_item {
   display: block;
@@ -122,6 +130,7 @@ body {
   position: relative;
   font-size: 0;
   border-radius: 4px;
+  top: 42%;
 }
 .burger_item:before,
 .burger_item:after {
@@ -247,6 +256,16 @@ body {
   text-transform: uppercase;
   margin: 0 0 26px;
 }
+@media (max-width: 800px) {
+  .features__item {
+    flex-basis: unset;
+  }
+}
+@media (max-width: 575px) {
+  .features__item {
+    padding: 0 10px;
+  }
+}
 
 /* works */
 .works {
@@ -295,6 +314,12 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 14px;
+}
+@media (max-width: 550px) {
+  .work__item > img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* team */
@@ -356,6 +381,27 @@ body {
 .team__icon:hover .social__icon {
   fill: #fff;
 }
+@media (max-width: 991px) {
+  .team__inner {
+    margin: 30px 0;
+  }
+  .team__item__content,
+  .team__item__subtitle,
+  .team__item__title {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .team__item {
+    max-width: unset;
+    margin: 20px 0;
+    padding: 0 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 /* reviews */
 .reviews {
@@ -392,6 +438,35 @@ body {
   font-weight: bold;
   font-size: 13px;
   text-transform: uppercase;
+}
+@media (max-width: 991px) {
+  .review__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .review__item__image {
+    display: block;
+    width: 100%;
+  }
+  .review__item__image > img {
+    display: block;
+    max-width: 100%;
+  }
+  .review__item__content {
+    width: 100%;
+    padding: 30px;
+  }
+  .review__item__content__author {
+    text-align: end;
+  }
+}
+@media (max-width: 575px) {
+  .reviews {
+    min-height: unset;
+  }
+  .review__item__content__text {
+    font-size: 25px;
+  }
 }
 
 /* download */
@@ -463,6 +538,19 @@ body {
 }
 .footer .team__icon:first-child {
   margin-left: 0;
+}
+@media (max-width: 575px) {
+  .footer__inner {
+    color: #adaebb;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__block {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+    padding: 0 10px;
+  }
 }
 
 /* copyright */
