@@ -168,7 +168,7 @@ body {
 /* intro */
 .intro {
   width: 100%;
-  background-image: url("/assets/img/Rectangle_bg.jpg");
+  background-image: url("assets/img/Rectangle_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2a2e48;
