@@ -20,8 +20,10 @@ $(() => {
         event.preventDefault()
         const elementId = $(this).data('scroll')
         const offset = $(elementId).offset()
+
+        elementId === '#features' ? height = 1 : height = -40
         $('html, body').animate({
-            scrollTop: offset.top - 40
+            scrollTop: offset.top + height
         }, 1000)
     })
 })
