@@ -269,6 +269,11 @@ body {
   text-transform: uppercase;
   margin: 0 0 26px;
 }
+@media (max-width: 1199px) {
+  .features {
+    padding: 40px 0 0;
+  }
+}
 @media (max-width: 800px) {
   .features__item {
     flex-basis: unset;
