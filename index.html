@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
@@ -67,19 +68,20 @@
                 <div class="header__logo">
                     <img src="assets/img/ActiveBox.png" alt="image">
                 </div>
-                <nav class="nav">
+                <!-- burger_menu -->
+                <button class="burger_menu" id='burger_menu' type="button">
+                    <div class="burger_item">menu</div>
+                    <div class="burger_item">menu</div>
+                    <div class="burger_item">menu</div>
+                </button>
+                <!-- nav -->
+                <nav class="nav" id="nav">
                     <a class="nav__link" href="#" data-scroll="#features">Features</a>
                     <a class="nav__link" href="#" data-scroll="#works">Works</a>
                     <a class="nav__link" href="#" data-scroll="#team">Our Team</a>
                     <a class="nav__link" href="#" data-scroll="#reviews">Testimonials</a>
                     <a class="nav__link" href="#" data-scroll="#download">Download</a>
                 </nav>
-                <!-- burger_menu -->
-                <button class="burger_menu" type="button">
-                    <div class="burger_item">menu</div>
-                    <div class="burger_item">menu</div>
-                    <div class="burger_item">menu</div>
-                </button>
             </div>
         </div>
     </header>
@@ -386,6 +388,7 @@
     </footer>
 
     <!-- js -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 

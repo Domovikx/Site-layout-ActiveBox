@@ -2,6 +2,8 @@ $(() => {
 
     const header = $('#header')
     const intro = $('#intro')
+    const nav = $('#nav')
+    const burger_menu = $('#burger_menu')
 
     /** header--fixed */
     $(window).on('scroll load resize', () => {
@@ -21,9 +23,17 @@ $(() => {
         const elementId = $(this).data('scroll')
         const offset = $(elementId).offset()
 
+        nav.removeClass('show')
+
         elementId === '#features' ? height = 1 : height = -40
         $('html, body').animate({
             scrollTop: offset.top + height
         }, 1000)
+    })
+
+    /** burger_menu toogle */
+    burger_menu.on('click', function (event) {
+        event.preventDefault()
+        nav.toggleClass('show')
     })
 })
