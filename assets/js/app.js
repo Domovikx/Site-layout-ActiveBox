@@ -46,5 +46,7 @@ $(() => {
         fade: true,
         cssEase: 'linear',
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
     });
 })
