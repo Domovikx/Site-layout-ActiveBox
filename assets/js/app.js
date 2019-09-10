@@ -36,4 +36,15 @@ $(() => {
         event.preventDefault()
         nav.toggleClass('show')
     })
+
+    /** slider - fade - http://kenwheeler.github.io/slick/ */
+    const reviews__slider = $('#reviews__slider')
+    reviews__slider.slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        arrows: false,
+    });
 })

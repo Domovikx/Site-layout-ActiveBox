@@ -474,14 +474,18 @@ body {
   font-size: 13px;
   text-transform: uppercase;
 }
+.img_max-h500 {
+  max-height: 500px;
+}
 @media (max-width: 991px) {
   .review__item {
     display: flex;
     flex-direction: column;
   }
   .review__item__image {
-    display: block;
+    display: flex;
     width: 100%;
+    justify-content: center;
   }
   .review__item__image > img {
     display: block;
